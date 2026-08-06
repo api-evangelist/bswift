@@ -1,18 +1,56 @@
 aid: bswift
 name: bswift
-description: 'bswift is a company surfaced via the API Evangelist harvest backlog (source: insurance-benefits-admin)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'bswift is a benefits administration platform used by employers, brokers
+  and channel partners to run health and welfare benefits — eligibility, annual enrollment,
+  life events, COBRA, billing and ACA compliance — with an AI assistant (Emma) layered
+  over the employee experience. Founded in Chicago in 2000, bswift was acquired by
+  Aetna in 2014, moved into CVS Health, and has operated as an independent company
+  backed by Francisco Partners since the 2022 carve-out. It runs a large connectivity
+  estate: 450+ active carrier file feeds, 300+ pre-built and API integrations, and
+  150+ API and SSO connections into HCM and payroll platforms including ADP, UKG, Paylocity
+  and Workday. Its production API gateway is live at api.bswift.com, but the REST contract
+  — along with the OpenAPI specs, sandbox environments and webhook event topics bswift
+  describes publicly — is issued only to alliance, integration and channel partners;
+  there is no public developer portal or API reference.'
 url: https://raw.githubusercontent.com/api-evangelist/bswift/refs/heads/main/apis.yml
+image: https://www.bswift.com/wp-content/uploads/2024/10/header-logo.svg
 x-type: company
 x-source: harvest:insurance-benefits-admin
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-06'
 modified: '2026-08-06'
 tags:
 - Company
-apis: []
+- Benefits Administration
+- Human Resources
+- Insurance
+- Health Insurance
+- Employee Benefits
+- HR Technology
+- COBRA
+- Enrollment
+- Payroll
+- Health and Welfare
+- Compliance
+apis:
+- name: bswift Partner API
+  description: 'bswift''s partner-facing REST API, served from an AWS API Gateway at
+    api.bswift.com. bswift publicly describes API coverage for demographics and employment
+    data, with lifecycle domains (plan, rate, enrollment) plus standardized schemas,
+    OpenAPI specs, sandbox environments and event-driven webhook subscriptions as
+    active investments. Every route on the gateway answers MISSING_AUTHENTICATION_TOKEN
+    without partner credentials; the contract is not published.'
+  humanURL: https://www.bswift.com/connectivity-hub/
+  baseURL: https://api.bswift.com
+  tags:
+  - Benefits Administration
+  - Eligibility
+  - Enrollment
+  - Employee Benefits
+  properties:
+  - type: Authentication
+    url: https://www.bswift.com/partnership-opportunities/
+    name: API credentials are issued through the partner/alliance program
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -21,3 +59,52 @@ maintainers:
 common:
 - type: Website
   url: https://www.bswift.com/
+- type: Blog
+  url: https://www.bswift.com/research-insights/
+- type: PrivacyPolicy
+  url: https://www.bswift.com/privacy-policy/
+- type: Security
+  url: https://www.bswift.com/bswift-vulnerability-disclosure-program/
+- type: VulnerabilityDisclosure
+  url: security/bswift-vulnerability-disclosure.yml
+- type: TrustCenter
+  url: security/bswift-trust-center.yml
+- type: Compliance
+  url: https://trust.bswift.com/
+- type: DomainSecurity
+  url: security/bswift-domain-security.yml
+- type: Conformance
+  url: conformance/bswift-conformance.yml
+- type: ChangeLog
+  url: changelog/bswift-changelog.yml
+- type: ChangeLog
+  url: https://www.bswift.com/research-insights/product-updates/
+  name: bswift Product Updates
+- type: LLMsTxt
+  url: llms/bswift-llms.txt
+- type: Partners
+  url: https://www.bswift.com/connectivity-hub/
+  name: bswift Connectivity Hub
+x-enrichment:
+  date: '2026-08-06'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+x-coverage:
+  state: gated
+  reason: sales-gate
+  detail: api.bswift.com is a live AWS API Gateway whose /ping route returns 200 "healthy",
+    but every functional route answers MISSING_AUTHENTICATION_TOKEN and the only public
+    path to the OpenAPI specs, sandbox and webhook topics bswift says it ships is the
+    Partnership Opportunities contact form — bswift runs no developer portal, docs
+    host or API reference anywhere on bswift.com.
+  evidence:
+  - url: https://api.bswift.com/ping
+    status: 200
+  - url: https://api.bswift.com/openapi.json
+    status: 400
+  - url: https://api.bswift.com/v1/openapi.json
+    status: 403
+  - url: https://www.bswift.com/connectivity-hub/
+    status: 200
+  checked: '2026-08-06'

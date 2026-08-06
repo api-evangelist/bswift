@@ -1,0 +1,69 @@
+generated: '2026-08-06'
+method: searched
+source: https://www.bswift.com/research-insights/product-updates/
+name: bswift Product Updates
+scheme: dated-monthly
+format: narrative release notes (one post per month, product-wide)
+audience: employers, brokers and channel partners
+cadence: monthly
+current_version: null
+notes: bswift publishes no numbered API or platform version. Product Updates is a
+  monthly, dated, human-readable release-notes stream covering the benefits administration
+  platform, Emma Intelligence, engagement solutions and connectivity. There is no
+  API-specific changelog, no breaking-change notice channel, and no machine-readable
+  feed for the partner API.
+entries:
+- date: '2026-07-30'
+  title: Product Updates July 2026
+  url: https://www.bswift.com/resource/product-updates-july-2026/
+  highlights:
+  - 'What''s New at bswift: Evive, Engagement Solutions and Platform Updates'
+  - Evive now integrates health content from the Mayo Clinic
+  - 'Engagement solution spotlight: getting a jump on enrollment season'
+  - Channel partner updates
+  breaking: []
+- date: '2026-06-26'
+  title: Product Updates June 2026
+  url: https://www.bswift.com/resource/product-updates-june-2026/
+  highlights:
+  - Smarter benefits, simpler experiences — open enrollment readiness
+  breaking: []
+- date: '2026-05-28'
+  title: Product Updates May 2026
+  url: https://www.bswift.com/resource/product-updates-may-2026/
+  highlights:
+  - Smarter benefits guidance, from eligibility to everyday action
+  breaking: []
+- date: '2026-04-01'
+  title: Product Updates April 2026
+  url: https://www.bswift.com/resource/product-updates-april-2026/
+  highlights:
+  - Smarter admin tools, new partnerships, and enhanced connectivity
+  breaking: []
+- date: '2026-03-01'
+  title: Product Updates March 2026
+  url: https://www.bswift.com/resource/product-updates-march-2026/
+  highlights:
+  - Benefits analytics and engagement solutions for real-time insights
+  breaking: []
+- date: '2026-01-01'
+  title: Product Updates January 2026
+  url: https://www.bswift.com/resource/product-updates-january-2026/
+  highlights:
+  - Benefits personalization and engagement enhancements with reporting insights
+  breaking: []
+earlier:
+- https://www.bswift.com/resource/product-updates-december-2025/
+- https://www.bswift.com/resource/product-updates-september-2025/
+- https://www.bswift.com/resource/product-updates-july-2025/
+- https://www.bswift.com/resource/product-updates-may-2025/
+- https://www.bswift.com/resource/product-updates-february-2025/
+- https://www.bswift.com/resource/product-updates-december-2024/
+- https://www.bswift.com/resource/product-updates-august-2024/
+x-evidence:
+  fetched: '2026-08-06'
+  url: https://www.bswift.com/research-insights/product-updates/
+  http_status: 200
+  note: Dates and titles read from each post's own byline; month-only dates above are
+    the post's stated month where the exact publication day was not exposed in the
+    page body.

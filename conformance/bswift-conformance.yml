@@ -1,0 +1,76 @@
+generated: '2026-08-06'
+method: searched
+source: https://trust.bswift.com/ + https://www.bswift.com/about/security/ + https://www.bswift.com/connectivity-hub/
+note: bswift publishes no OpenAPI, AsyncAPI, GraphQL SDL or Postman collection, so
+  nothing below is derived from a machine-readable contract. Every entry is either
+  a published compliance claim (attested) or an explicit unknown. Nothing is asserted
+  from the marketing description of the API alone.
+standards:
+- id: soc1-type-ii
+  conforms: true
+  evidence: Listed on the bswift Customer Assurance Profile at https://trust.bswift.com/
+    and on https://www.bswift.com/about/security/ as an annual audit.
+- id: soc2-type-ii
+  conforms: true
+  evidence: Listed on the bswift Customer Assurance Profile at https://trust.bswift.com/
+    and on https://www.bswift.com/about/security/ as an annual audit.
+- id: soc3
+  conforms: true
+  evidence: SOC 3 listed on https://trust.bswift.com/; a SOC 3 report is linked from
+    https://www.bswift.com/about/security/.
+- id: hipaa
+  conforms: true
+  evidence: Listed on https://trust.bswift.com/ and https://www.bswift.com/about/security/.
+    bswift administers protected health information for employer health and welfare
+    plans.
+- id: hitrust
+  conforms: true
+  evidence: 'https://www.bswift.com/about/security/ — "we undergo SOC 1 Type II, SOC
+    2 Type II, HIPAA, and HITRUST certification audits annually".'
+- id: nist-csf
+  conforms: true
+  evidence: 'https://www.bswift.com/about/security/ — "Our security program is grounded
+    in the NIST security framework".'
+- id: aca-reporting
+  conforms: true
+  evidence: bswift ships an ACA management suite and COBRA/billing compliance services
+    (https://www.bswift.com/compliance-cobra-services/).
+- id: x12-edi
+  conforms: true
+  evidence: 450+ active carrier file feeds delivered over standardized EDI (https://www.bswift.com/connectivity-hub/).
+    The transaction set profile is not published.
+- id: saml-sso
+  conforms: true
+  evidence: 150+ API and SSO connections advertised at https://www.bswift.com/connectivity-hub/;
+    SSO is offered to integration partners. The specific protocol profile is not published.
+- id: oauth2
+  conforms: unknown
+  evidence: api.bswift.com answers MISSING_AUTHENTICATION_TOKEN on every route; no
+    /.well-known/oauth-authorization-server or /.well-known/openid-configuration is
+    served, and no auth documentation is public.
+- id: oidc
+  conforms: unknown
+  evidence: No /.well-known/openid-configuration on www.bswift.com (soft 404) or api.bswift.com
+    (HTTP 400).
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: 'The gateway''s public error envelope is a bespoke JSON shape — {"code":
+    "custom-default-4xx", "error": "Missing Authentication Token", "type": "MISSING_AUTHENTICATION_TOKEN"}
+    — not application/problem+json.'
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: /.well-known/security.txt returns the WordPress home page on www.bswift.com
+    and HTTP 400 on api.bswift.com.
+- id: openapi
+  conforms: unknown
+  evidence: bswift states it is "standardizing schemas and improving our OpenAPI specs"
+    (https://www.bswift.com/resource/benefits-api-integration-faster-implementations-fewer-exceptions/),
+    but no specification is published at any probed location.
+- id: asyncapi
+  conforms: unknown
+  evidence: bswift describes event topics and secure webhook subscriptions as an active
+    investment; no event catalog or AsyncAPI document is published.
+- id: fhir-r4
+  conforms: false
+  evidence: No FHIR resource surface found. bswift is a benefits administration platform,
+    not a clinical data holder.
