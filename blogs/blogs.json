@@ -1,0 +1,11 @@
+{
+  "repo": "bswift",
+  "feeds": [
+    {
+      "source": "https://www.bswift.com/",
+      "error": "HTTPError"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-08-15T12:22:01Z"
+}
