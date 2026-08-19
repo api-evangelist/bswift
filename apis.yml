@@ -16,7 +16,7 @@ url: https://raw.githubusercontent.com/api-evangelist/bswift/refs/heads/main/api
 image: https://www.bswift.com/wp-content/uploads/2024/10/header-logo.svg
 x-type: company
 x-source: harvest:insurance-benefits-admin
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-08-06'
 modified: '2026-08-06'
 tags:
