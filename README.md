@@ -64,5 +64,90 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-bswift is a company surfaced via the API Evangelist harvest backlog (source: insurance-benefits-admin) and added to the network as a stub for full-pipeline profiling.
-- https://www.bswift.com/
+bswift is a benefits administration platform used by employers, brokers and channel partners to run health and welfare benefits — eligibility, annual enrollment, life events, COBRA, billing and ACA compliance — with an AI assistant (Emma) layered over the employee experience. Founded in Chicago in 2000, bswift was acquired by Aetna in 2014, moved into CVS Health, and has operated as an independent company backed by Francisco Partners since the 2022 carve-out. It runs a large connectivity estate: 450+ active carrier file feeds, 300+ pre-built and API integrations, and 150+ API and SSO connections into HCM and payroll platforms including ADP, UKG, Paylocity and Workday. Its production API gateway is live at api.bswift.com, but the REST contract — along with the OpenAPI specs, sandbox environments and webhook event topics bswift describes publicly — is issued only to alliance, integration and channel partners; there is no public developer portal or API reference.
+
+**Areas:** Company · Benefits Administration · Human Resources · Insurance · Health Insurance · Employee Benefits · HR Technology · COBRA · Enrollment · Payroll · Health and Welfare · Compliance
+
+## bswift on APIs.io
+
+Everything profiled for bswift is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/bswift/](https://apis.io/providers/bswift/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [bswift Partner API](https://apis.io/apis/bswift/bswift-partner-api/) — bswift's partner-facing REST API, served from an AWS API Gateway at api.bswift.com. bswift publicly describes API coverage for demographics and employment…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Bswift Domain Security](https://apis.io/security/bswift/bswift-domain-security/)
+- [Bswift Trust Center](https://apis.io/security/bswift/bswift-trust-center/)
+- [Bswift Vulnerability Disclosure](https://apis.io/security/bswift/bswift-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.bswift.com/)
+- [Changelog](https://www.bswift.com/research-insights/product-updates/)
+- [Blog](https://www.bswift.com/research-insights/)
+- [Security](https://www.bswift.com/bswift-vulnerability-disclosure-program/)
+- [Compliance](https://trust.bswift.com/)
+- [Privacy policy](https://www.bswift.com/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 22.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 14.3 |
+| Access clarity | 26.3 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 28.1** — Insurance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/bswift/](https://apis.io/providers/bswift/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for bswift: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/bswift/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
